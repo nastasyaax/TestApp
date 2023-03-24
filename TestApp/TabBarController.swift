@@ -18,7 +18,7 @@ final class TabBarController: UITabBarController {
     
     //MARK: - Private methods
     private func generateTabBar() {
-        viewControllers = [
+        let controllers = [
             makeViewController(
                 StoreViewController(viewModel: StoreViewModel(networkManager: .init())),
                 image: UIImage(named: "home.tab.bar")),
@@ -29,6 +29,8 @@ final class TabBarController: UITabBarController {
                 ProfileViewController(viewModel: ProfileViewModel()),
                 image: UIImage(named: "profile.tab.bar")),
         ]
+        viewControllers = controllers
+        selectedIndex = controllers.count - 1
     }
     
     private func makeViewController(_ viewController: UIViewController = UIViewController(), image: UIImage?) -> UIViewController {

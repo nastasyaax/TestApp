@@ -1,5 +1,5 @@
 //
-//  AuthViewController.swift
+//  RegisterViewController.swift
 //  TestApp
 //
 //  Created by Анастасия Хурдаян on 13.03.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AuthViewController: UIViewController {
+final class RegisterViewController: UIViewController {
     
     //MARK: - Private components
     private var viewModel: AuthViewModelProtocol
@@ -73,12 +73,13 @@ final class AuthViewController: UIViewController {
                 firstName: self.firstNameTextField.text ?? "",
                 lastName: self.lastNameTextField.text ?? "",
                 email: self.emailTextField.text ?? "") { error in
-                    if (error != nil) {
-                        self.showAlert(title: "This account has already been registred")
-                    } else {
+                    guard let error else {
                         let vc = ProfileViewController(viewModel: ProfileViewModel())
                         vc.modalPresentationStyle = .fullScreen
-                        self.present(vc, animated: true)                    }
+                        self.present(vc, animated: true)
+                        return
+                    }
+                    self.showAlert(title: error)
                 }
         }), for: .touchUpInside)
         return btn
@@ -231,7 +232,7 @@ final class AuthViewController: UIViewController {
     }
 }
 
-extension AuthViewController {
+extension RegisterViewController {
     func showAlert(title: String? = nil, message: String? = nil, style: UIAlertController.Style = .alert, actions: [UIAlertAction]? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         guard let actions = actions else {

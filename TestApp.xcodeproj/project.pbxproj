@@ -32,7 +32,7 @@
 		EE345AEF29CCA3730013F9CB /* StoreHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE345AEE29CCA3730013F9CB /* StoreHeader.swift */; };
 		EE345AF129CCD5810013F9CB /* StoreCategoryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE345AF029CCD5810013F9CB /* StoreCategoryField.swift */; };
 		EE4EB97F29BF2326007BE8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EB97E29BF2326007BE8CF /* AppDelegate.swift */; };
-		EE4EB98329BF2326007BE8CF /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EB98229BF2326007BE8CF /* AuthViewController.swift */; };
+		EE4EB98329BF2326007BE8CF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EB98229BF2326007BE8CF /* RegisterViewController.swift */; };
 		EE4EB98929BF2326007BE8CF /* TestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE4EB98729BF2326007BE8CF /* TestApp.xcdatamodeld */; };
 		EE4EB98B29BF2327007BE8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4EB98A29BF2327007BE8CF /* Assets.xcassets */; };
 		EE4EB98E29BF2327007BE8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4EB98C29BF2327007BE8CF /* LaunchScreen.storyboard */; };
@@ -78,7 +78,7 @@
 		EE345AF029CCD5810013F9CB /* StoreCategoryField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCategoryField.swift; sourceTree = "<group>"; };
 		EE4EB97B29BF2326007BE8CF /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4EB97E29BF2326007BE8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE4EB98229BF2326007BE8CF /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		EE4EB98229BF2326007BE8CF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EE4EB98829BF2326007BE8CF /* TestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestApp.xcdatamodel; sourceTree = "<group>"; };
 		EE4EB98A29BF2327007BE8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE4EB98D29BF2327007BE8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -361,7 +361,7 @@
 		EE4EB99629BF25B6007BE8CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EE4EB98229BF2326007BE8CF /* AuthViewController.swift */,
+				EE4EB98229BF2326007BE8CF /* RegisterViewController.swift */,
 				EE60CAF929C0C2E100C47259 /* LoginViewController.swift */,
 			);
 			path = View;
@@ -558,7 +558,7 @@
 				EE345AE929CC95080013F9CB /* UICollectionViewCell+Extensions.swift in Sources */,
 				EE345ABD29C89B540013F9CB /* ProfileField.swift in Sources */,
 				D2297AF529CCE06400296270 /* Server.swift in Sources */,
-				EE4EB98329BF2326007BE8CF /* AuthViewController.swift in Sources */,
+				EE4EB98329BF2326007BE8CF /* RegisterViewController.swift in Sources */,
 				EE4EB99E29BF3D87007BE8CF /* UITableViewCell+Extensions.swift in Sources */,
 				EE345AEF29CCA3730013F9CB /* StoreHeader.swift in Sources */,
 				EEC4B70129CDA4C000A20E43 /* FlashSaleCell.swift in Sources */,

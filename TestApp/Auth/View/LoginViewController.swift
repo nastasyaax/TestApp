@@ -77,12 +77,12 @@ final class LoginViewController: UIViewController {
         btn.addAction(UIAction(handler: { _ in
             self.viewModel.checkAccount(by: self.firstNameTextField.text ?? "") { isExist in
                 if !isExist {
-                    let vc = ProfileViewController(viewModel: ProfileViewModel())
+                    let vc = TabBarController()
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 } else {
                     let action = UIAlertAction(title: "Go to registration screen", style: .cancel) { _ in
-                        let vc = AuthViewController(viewModel: AuthViewModel())
+                        let vc = RegisterViewController(viewModel: AuthViewModel())
                         vc.modalPresentationStyle = .fullScreen
                         self.present(vc, animated: true)
                     }

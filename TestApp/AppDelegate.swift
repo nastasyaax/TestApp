@@ -17,13 +17,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
         let window = UIWindow(frame: UIScreen.main.bounds)
-        //let vc = AuthViewController(viewModel: AuthViewModel())
-        //let profileVC = ProfileViewController()
-//        let vc = LoginViewController(viewModel: AuthViewModel())
-//        profileVC.title = "Profile"
-//        let vc = UINavigationController(rootViewController: profileVC)
-        let vc = TabBarController()
-        //let vc = AllGoodsViewController()
+        let vc = RegisterViewController(viewModel: AuthViewModel())
         window.rootViewController = vc
         window.makeKeyAndVisible()
         self.window = window
